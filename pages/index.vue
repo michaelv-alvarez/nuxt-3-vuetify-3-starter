@@ -1,7 +1,7 @@
 <template>
   <h1>Welcome to the jungle!</h1>
   <h2>El usuario logueado es {{ user.firstName }}</h2>
-  <button @click="userLogout">Cerrar sesion</button>
+  <v-btn color="primary" class="ml-1" @click="userLogout">Cerrar sesion</v-btn>
 </template>
 
 

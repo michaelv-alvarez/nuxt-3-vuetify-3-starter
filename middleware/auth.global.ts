@@ -3,7 +3,7 @@ export default defineNuxtRouteMiddleware((to) => {
     const { status, signIn } = useSession()
 
     // Return to login immeadiatly if user is not authenticated
-    if (status.value !== 'authenticated') {
+    if (status.value === 'unauthenticated') {
         if (to.fullPath === '/auth/login') {
             return
         }

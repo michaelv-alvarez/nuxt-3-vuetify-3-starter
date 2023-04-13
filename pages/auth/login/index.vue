@@ -26,8 +26,8 @@
                 prepend-inner-icon="mdi-lock-open-variant-outline"
                 label="Contraseña"
                 :type="showPassword ? 'text' : 'password'"
-                :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
-                @click:append="showPassword = !showPassword"
+                :append-inner-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
+                @click:append-inner="showPassword = !showPassword"
                 @keyup.enter="userLogin"
               />
 
